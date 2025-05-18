@@ -66,19 +66,29 @@
   },
   "reviews": {
     "title": "Parent Reviews",
-    "subtitle": "What Parents Say About Us"
+    "subtitle": "What Parents Say About Us",
+    "rating": {
+      "one": "1 star",
+      "two": "2 stars",
+      "three": "3 stars",
+      "four": "4 stars",
+      "five": "5 stars"
+    },
+    "date": {
+      "format": "MMMM d, yyyy"
+    }
   },
   "activities": {
     "title": "Our Activities",
-    "storyTime": {
+    "storytime": {
       "name": "Story Time",
       "description": "Interactive storytelling sessions with colorful books and puppets"
     },
-    "musicMovement": {
+    "musicmovement": {
       "name": "Music & Movement",
       "description": "Fun dance and music activities to develop motor skills"
     },
-    "artsCrafts": {
+    "artscrafts": {
       "name": "Arts & Crafts",
       "description": "Creative activities with safe, child-friendly materials"
     }

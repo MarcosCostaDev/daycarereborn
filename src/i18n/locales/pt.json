@@ -66,19 +66,29 @@
   },
   "reviews": {
     "title": "Avaliações dos Pais",
-    "subtitle": "O que os pais dizem sobre nós"
+    "subtitle": "O que os pais dizem sobre nós",
+    "rating": {
+      "one": "1 estrela",
+      "two": "2 estrelas",
+      "three": "3 estrelas",
+      "four": "4 estrelas",
+      "five": "5 estrelas"
+    },
+    "date": {
+      "format": "d 'de' MMMM 'de' yyyy"
+    }
   },
   "activities": {
     "title": "Nossas Atividades",
-    "storyTime": {
+    "storytime": {
       "name": "Hora da História",
       "description": "Sessões interativas de contação de histórias com livros coloridos e fantoches"
     },
-    "musicMovement": {
+    "musicmovement": {
       "name": "Música e Movimento",
       "description": "Atividades divertidas de dança e música para desenvolver habilidades motoras"
     },
-    "artsCrafts": {
+    "artscrafts": {
       "name": "Artes e Artesanato",
       "description": "Atividades criativas com materiais seguros para crianças"
     }

@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { useTranslation } from 'react-i18next'
 import type { Theme } from '../../contexts/ThemeContext'
 import type { Review } from '../../types'
 
@@ -64,13 +65,26 @@ interface ReviewsProps {
 }
 
 export const Reviews = ({ reviews }: ReviewsProps) => {
+  const { t } = useTranslation()
+
+  const getRatingText = (rating: number) => {
+    const ratingMap = {
+      1: 'one',
+      2: 'two',
+      3: 'three',
+      4: 'four',
+      5: 'five'
+    }
+    return t(`reviews.rating.${ratingMap[rating as keyof typeof ratingMap]}`)
+  }
+
   return (
     <ReviewsGrid>
       {reviews.map((review) => (
         <ReviewCard key={review.id}>
           <ReviewImage src={review.image} alt={review.name} />
           <ReviewName>{review.name}</ReviewName>
-          <StarRating>
+          <StarRating aria-label={getRatingText(review.rating)}>
             {[...Array(review.rating)].map((_, i) => (
               <FontAwesomeIcon key={i} icon={faStar} />
             ))}
