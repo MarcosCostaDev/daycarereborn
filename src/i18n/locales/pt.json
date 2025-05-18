@@ -1,36 +1,34 @@
 {
-  "welcome": "Creche Reborn – Cuidado e carinho para seu bebê reborn",
+  "welcome": "Reborn Daycare – Cuidado e amor para seu bebê reborn",
   "about": "Sobre Nós",
   "services": "Nossos Serviços",
   "gallery": "Galeria",
   "contact": "Contato",
-  "reviews": "Avaliações dos Clientes",
-  "aboutText": "Seu bebê reborn vai se sentir em casa com a gente. Aqui, ele tem uma rotina estruturada, cheia de carinho, atenção e estímulo — tudo o que um bebê precisa para ser feliz.",
+  "reviews": "Avaliações",
+  "aboutText": "Seu bebê reborn se sentirá em casa conosco. Aqui, eles têm uma rotina estruturada cheia de amor, atenção e estímulos — tudo o que um bebê precisa para ser feliz.",
   "dailyActivities": {
-    "title": "Na nossa creche, o dia é repleto de:",
+    "title": "Em nossa creche, o dia é preenchido com:",
     "activities": [
-      "Brincadeiras ao ar livre no parquinho",
-      "Troca de roupas com muito cuidado",
-      "Momentos de aconchego e colo",
-      "Sonequinha tranquila com música suave",
-      "Alimentação servida com amor",
-      "Sessão de fotos com look do dia",
-      "Histórias, carinho e estímulos sensoriais",
-      "Preparação especial para a volta pra casa"
+      "Brincadeiras ao ar livre no playground",
+      "Troca cuidadosa de roupas",
+      "Momentos de carinho e aconchego",
+      "Hora do sono tranquila com música suave",
+      "Refeições servidas com amor",
+      "Sessão diária de fotos com a roupa do dia",
+      "Histórias, afeto e estimulação sensorial",
+      "Preparação especial para ir para casa"
     ]
   },
   "benefits": {
-    "title": "Tudo pensado para que o bebê tenha um dia calmo, feliz e completo — e você também.",
-    "subtitle": "Porque sim, o bebê merece atenção total.",
-    "description": "Mas a sua sanidade também é preciosa. Você não precisa viver em alerta, nem esquecer de cuidar de si mesma por estar pensando se a fraldinha dela foi trocada."
+    "title": "Nossos Benefícios",
+    "subtitle": "Por que nos escolher?",
+    "description": "Fornecemos um ambiente seguro e acolhedor onde seu filho pode aprender e crescer."
   },
   "pricing": {
-    "text": "Por apenas R$ 25 por dia, garantimos cuidado, amor e uma rotina que funciona."
+    "title": "Preços",
+    "description": "Preços acessíveis com opções flexíveis de horário. Entre em contato conosco para informações detalhadas sobre preços."
   },
-  "tagline": {
-    "line1": "Creche Reborn.",
-    "line2": "Seu bebê bem. Você em paz."
-  },
+  "tagline": "Onde a jornada de cada criança começa com amor e cuidado",
   "servicesList": {
     "daycare": "Serviços de Creche",
     "cleaning": "Limpeza e Manutenção",
@@ -44,22 +42,49 @@
     "hours": "Horário de Funcionamento"
   },
   "reviewSection": {
-    "title": "O que Nossos Clientes Dizem",
-    "addReview": "Adicionar sua Avaliação"
+    "title": "O que nossos clientes dizem",
+    "addReview": "Adicione sua avaliação"
   },
   "comments": {
-    "title": "Compartilhe sua Experiência",
+    "title": "Compartilhe sua experiência",
     "description": "Adoraríamos ouvir sobre sua experiência com nossa creche. Por favor, compartilhe seus pensamentos e comentários abaixo."
   },
   "header": {
-    "alt": "Creche para Bebê Reborn"
+    "title": "Creche Baby Reborn",
+    "language": {
+      "en": "English",
+      "pt": "Português"
+    }
   },
   "theme": {
     "light": "Tema Claro",
     "dark": "Tema Escuro"
   },
   "language": {
-    "en": "Inglês",
+    "en": "English",
     "pt": "Português"
+  },
+  "reviews": {
+    "title": "Avaliações dos Pais",
+    "subtitle": "O que os pais dizem sobre nós"
+  },
+  "activities": {
+    "title": "Nossas Atividades",
+    "storyTime": {
+      "name": "Hora da História",
+      "description": "Sessões interativas de contação de histórias com livros coloridos e fantoches"
+    },
+    "musicMovement": {
+      "name": "Música e Movimento",
+      "description": "Atividades divertidas de dança e música para desenvolver habilidades motoras"
+    },
+    "artsCrafts": {
+      "name": "Artes e Artesanato",
+      "description": "Atividades criativas com materiais seguros para crianças"
+    }
+  },
+  "discussion": {
+    "title": "Participe da Discussão",
+    "description": "Compartilhe seus pensamentos e experiências com nossa comunidade"
   }
 } 

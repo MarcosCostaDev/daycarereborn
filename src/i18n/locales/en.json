@@ -20,17 +20,15 @@
     ]
   },
   "benefits": {
-    "title": "Everything is designed for the baby to have a calm, happy, and complete day — and you too.",
-    "subtitle": "Because yes, the baby deserves full attention.",
-    "description": "But your peace of mind is precious too. You don't need to live on alert, nor forget to take care of yourself while worrying if their diaper was changed."
+    "title": "Our Benefits",
+    "subtitle": "Why Choose Us?",
+    "description": "We provide a safe, nurturing environment where your child can learn and grow."
   },
   "pricing": {
-    "text": "For just $25 per day, we guarantee care, love, and a routine that works."
+    "title": "Pricing",
+    "description": "Affordable rates with flexible scheduling options. Contact us for detailed pricing information."
   },
-  "tagline": {
-    "line1": "Reborn Daycare.",
-    "line2": "Your baby well. You at peace."
-  },
+  "tagline": "Where Every Child's Journey Begins with Love and Care",
   "servicesList": {
     "daycare": "Daycare Services",
     "cleaning": "Cleaning & Maintenance",
@@ -52,7 +50,11 @@
     "description": "We would love to hear about your experience with our daycare. Please share your thoughts and comments below."
   },
   "header": {
-    "alt": "Daycare for Baby Reborn"
+    "title": "Baby Reborn Daycare",
+    "language": {
+      "en": "English",
+      "pt": "Português"
+    }
   },
   "theme": {
     "light": "Light Theme",
@@ -61,5 +63,28 @@
   "language": {
     "en": "English",
     "pt": "Portuguese"
+  },
+  "reviews": {
+    "title": "Parent Reviews",
+    "subtitle": "What Parents Say About Us"
+  },
+  "activities": {
+    "title": "Our Activities",
+    "storyTime": {
+      "name": "Story Time",
+      "description": "Interactive storytelling sessions with colorful books and puppets"
+    },
+    "musicMovement": {
+      "name": "Music & Movement",
+      "description": "Fun dance and music activities to develop motor skills"
+    },
+    "artsCrafts": {
+      "name": "Arts & Crafts",
+      "description": "Creative activities with safe, child-friendly materials"
+    }
+  },
+  "discussion": {
+    "title": "Join the Discussion",
+    "description": "Share your thoughts and experiences with our community"
   }
 } 
