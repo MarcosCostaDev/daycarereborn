@@ -8,6 +8,7 @@ import './i18n/config'
 import reviewsData from './data/reviews.json'
 // import GoogleAd from './GoogleAd'
 import headerImg from '../public/images/ads-header.png'
+import headerBgImg from '../public/images/header-bg.png'
 import { ThemeProvider, useTheme } from './ThemeContext'
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react'
 import type { Theme } from './ThemeContext'
@@ -23,7 +24,10 @@ const AppContainer = styled.div<{ theme?: Theme }>`
 `
 
 const Header = styled.header`
-  background: linear-gradient(135deg, #89CFF0 0%, #FFB6C1 100%);
+  background: linear-gradient(135deg, #89CFF0 0%, #FFB6C1 100%), url(${headerBgImg});
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
