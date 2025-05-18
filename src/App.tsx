@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBaby, faStar, faLanguage, faCheck } from '@fortawesome/free-solid-svg-icons'
+import { DiscussionEmbed } from 'disqus-react'
 import './i18n/config'
 import reviewsData from './data/reviews.json'
 // import GoogleAd from './GoogleAd'
@@ -170,6 +171,16 @@ const MainContent = styled.div`
   padding: 20px;
 `
 
+const CommentsSection = styled(Section)`
+  margin-top: 3rem;
+  text-align: center;
+`
+
+const CommentsTitle = styled.h2`
+  color: ${({ theme }) => theme?.text};
+  margin-bottom: 2rem;
+`
+
 function AppContent() {
   const { t, i18n } = useTranslation()
   const { theme, toggleTheme, isDark } = useTheme()
@@ -178,6 +189,13 @@ function AppContent() {
   const handleThemeToggle = () => toggleTheme()
 
   const activities = t('dailyActivities.activities', { returnObjects: true }) as string[]
+
+  const disqusConfig = {
+    url: window.location.href,
+    identifier: 'daycarereborn',
+    title: 'Daycare Comments',
+    language: i18n.language
+  }
 
   return (
     <AppContainer theme={theme}>
@@ -247,6 +265,15 @@ function AppContent() {
             ))}
           </ReviewsGrid>
         </Section>
+
+        <CommentsSection theme={theme}>
+          <CommentsTitle>{t('comments.title', 'Share Your Experience')}</CommentsTitle>
+          <p>{t('comments.description', 'We would love to hear about your experience with our daycare. Please share your thoughts and comments below.')}</p>
+          <DiscussionEmbed
+            shortname="your-disqus-shortname"
+            config={disqusConfig}
+          />
+        </CommentsSection>
       </MainContent>
     </AppContainer>
   )
