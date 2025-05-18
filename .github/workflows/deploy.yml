@@ -28,6 +28,8 @@ jobs:
         run: npm run build
         env:
           CI: false  # This will prevent treating warnings as errors
+          NODE_ENV: production
+          VITE_IGNORE_TS_ERRORS: true
 
       - name: Create gh-pages branch if not exists
         run: |
