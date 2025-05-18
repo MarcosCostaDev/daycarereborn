@@ -7,8 +7,8 @@ import { DiscussionEmbed } from 'disqus-react'
 import './i18n/config'
 import reviewsData from './data/reviews.json'
 // import GoogleAd from './GoogleAd'
-import headerImg from '../public/images/ads-header.png'
-import headerBgImg from '../public/images/header-bg.png'
+import headerImg from '/daycarereborn/images/ads-header.png'
+import headerBgImg from '/daycarereborn/images/header-bg.png'
 import { ThemeProvider, useTheme } from './ThemeContext'
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react'
 import type { Theme } from './ThemeContext'
@@ -201,6 +201,11 @@ function AppContent() {
     language: i18n.language
   }
 
+  const reviewsWithBaseUrl = reviews.map(review => ({
+    ...review,
+    image: `/daycarereborn${review.image}`
+  }))
+
   return (
     <AppContainer theme={theme}>
       <MainContent>
@@ -250,7 +255,7 @@ function AppContent() {
         <Section theme={theme}>
           <h2>{t('reviewSection.title')}</h2>
           <ReviewsGrid>
-            {reviews.map((review) => (
+            {reviewsWithBaseUrl.map((review) => (
               <ReviewCard key={review.id}>
                 <ReviewImage src={review.image} alt={review.name} />
                 <ReviewName>{review.name}</ReviewName>
