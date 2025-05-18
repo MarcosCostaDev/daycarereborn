@@ -1,0 +1,50 @@
+{
+  "welcome": "Creche Reborn – Cuidado e carinho para seu bebê reborn",
+  "about": "Sobre Nós",
+  "services": "Nossos Serviços",
+  "gallery": "Galeria",
+  "contact": "Contato",
+  "reviews": "Avaliações dos Clientes",
+  "aboutText": "Seu bebê reborn vai se sentir em casa com a gente. Aqui, ele tem uma rotina estruturada, cheia de carinho, atenção e estímulo — tudo o que um bebê precisa para ser feliz.",
+  "dailyActivities": {
+    "title": "Na nossa creche, o dia é repleto de:",
+    "activities": [
+      "Brincadeiras ao ar livre no parquinho",
+      "Troca de roupas com muito cuidado",
+      "Momentos de aconchego e colo",
+      "Sonequinha tranquila com música suave",
+      "Alimentação servida com amor",
+      "Sessão de fotos com look do dia",
+      "Histórias, carinho e estímulos sensoriais",
+      "Preparação especial para a volta pra casa"
+    ]
+  },
+  "benefits": {
+    "title": "Tudo pensado para que o bebê tenha um dia calmo, feliz e completo — e você também.",
+    "subtitle": "Porque sim, o bebê merece atenção total.",
+    "description": "Mas a sua sanidade também é preciosa. Você não precisa viver em alerta, nem esquecer de cuidar de si mesma por estar pensando se a fraldinha dela foi trocada."
+  },
+  "pricing": {
+    "text": "Por apenas R$ 25 por dia, garantimos cuidado, amor e uma rotina que funciona."
+  },
+  "tagline": {
+    "line1": "Creche Reborn.",
+    "line2": "Seu bebê bem. Você em paz."
+  },
+  "servicesList": {
+    "daycare": "Serviços de Creche",
+    "cleaning": "Limpeza e Manutenção",
+    "repair": "Serviços de Reparo",
+    "accessories": "Acessórios e Roupas"
+  },
+  "contactInfo": {
+    "address": "Endereço",
+    "phone": "Telefone",
+    "email": "Email",
+    "hours": "Horário de Funcionamento"
+  },
+  "reviewSection": {
+    "title": "O que Nossos Clientes Dizem",
+    "addReview": "Adicionar sua Avaliação"
+  }
+} 

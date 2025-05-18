@@ -1,0 +1,50 @@
+{
+  "welcome": "Reborn Daycare – Care and love for your reborn baby",
+  "about": "About Us",
+  "services": "Our Services",
+  "gallery": "Gallery",
+  "contact": "Contact Us",
+  "reviews": "Customer Reviews",
+  "aboutText": "Your reborn baby will feel at home with us. Here, they have a structured routine full of love, attention, and stimulation — everything a baby needs to be happy.",
+  "dailyActivities": {
+    "title": "At our daycare, the day is filled with:",
+    "activities": [
+      "Outdoor playtime in the playground",
+      "Careful clothing changes",
+      "Snuggle and cuddle moments",
+      "Peaceful nap time with soft music",
+      "Meals served with love",
+      "Daily photo session with outfit of the day",
+      "Stories, affection, and sensory stimulation",
+      "Special preparation for going home"
+    ]
+  },
+  "benefits": {
+    "title": "Everything is designed for the baby to have a calm, happy, and complete day — and you too.",
+    "subtitle": "Because yes, the baby deserves full attention.",
+    "description": "But your peace of mind is precious too. You don't need to live on alert, nor forget to take care of yourself while worrying if their diaper was changed."
+  },
+  "pricing": {
+    "text": "For just $25 per day, we guarantee care, love, and a routine that works."
+  },
+  "tagline": {
+    "line1": "Reborn Daycare.",
+    "line2": "Your baby well. You at peace."
+  },
+  "servicesList": {
+    "daycare": "Daycare Services",
+    "cleaning": "Cleaning & Maintenance",
+    "repair": "Repair Services",
+    "accessories": "Accessories & Clothing"
+  },
+  "contactInfo": {
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Business Hours"
+  },
+  "reviewSection": {
+    "title": "What Our Customers Say",
+    "addReview": "Add Your Review"
+  }
+} 
