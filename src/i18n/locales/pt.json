@@ -46,5 +46,20 @@
   "reviewSection": {
     "title": "O que Nossos Clientes Dizem",
     "addReview": "Adicionar sua Avaliação"
+  },
+  "comments": {
+    "title": "Compartilhe sua Experiência",
+    "description": "Adoraríamos ouvir sobre sua experiência com nossa creche. Por favor, compartilhe seus pensamentos e comentários abaixo."
+  },
+  "header": {
+    "alt": "Creche para Bebê Reborn"
+  },
+  "theme": {
+    "light": "Tema Claro",
+    "dark": "Tema Escuro"
+  },
+  "language": {
+    "en": "Inglês",
+    "pt": "Português"
   }
 } 

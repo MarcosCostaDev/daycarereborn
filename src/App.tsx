@@ -383,12 +383,11 @@ function AppContent() {
   const disqusConfig = {
     url: window.location.href,
     identifier: 'daycarereborn',
-    title: 'Daycare Comments',
+    title: t('comments.title'),
     language: i18n.language === 'en' ? 'en' : 'pt_BR',
     theme: isDark ? 'dark' : 'light'
   }
 
-  // Update Disqus language when i18n language changes
   useEffect(() => {
     if (window.DISQUS) {
       window.DISQUS.reset({
@@ -406,13 +405,13 @@ function AppContent() {
           i18n.changeLanguage(newLang)
         }}>
           <FontAwesomeIcon icon={faLanguage} />
-          {i18n.language === 'en' ? 'PT' : 'EN'}
+          {i18n.language === 'en' ? t('language.pt') : t('language.en')}
         </LanguageButton>
-        <ThemeToggleButton theme={theme} onClick={handleThemeToggle}>
+        <ThemeToggleButton theme={theme} onClick={handleThemeToggle} title={isDark ? t('theme.light') : t('theme.dark')}>
           {isDark ? '🌙' : '☀️'}
         </ThemeToggleButton>
         <HeroSection theme={theme}>
-          <img src={headerImg} alt="Daycare for Baby Reborn" />
+          <img src={headerImg} alt={t('header.alt')} />
         </HeroSection>
 
         {/* <GoogleAd /> */}
@@ -468,8 +467,8 @@ function AppContent() {
         </Section>
 
         <CommentsSection theme={theme}>
-          <CommentsTitle theme={theme}>{t('comments.title', 'Share Your Experience')}</CommentsTitle>
-          <p>{t('comments.description', 'We would love to hear about your experience with our daycare. Please share your thoughts and comments below.')}</p>
+          <CommentsTitle theme={theme}>{t('comments.title')}</CommentsTitle>
+          <p>{t('comments.description')}</p>
           <div className="disqus-container">
             <DiscussionEmbed
               shortname="daycarereborn"

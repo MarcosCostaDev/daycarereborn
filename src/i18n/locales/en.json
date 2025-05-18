@@ -46,5 +46,20 @@
   "reviewSection": {
     "title": "What Our Customers Say",
     "addReview": "Add Your Review"
+  },
+  "comments": {
+    "title": "Share Your Experience",
+    "description": "We would love to hear about your experience with our daycare. Please share your thoughts and comments below."
+  },
+  "header": {
+    "alt": "Daycare for Baby Reborn"
+  },
+  "theme": {
+    "light": "Light Theme",
+    "dark": "Dark Theme"
+  },
+  "language": {
+    "en": "English",
+    "pt": "Portuguese"
   }
 } 
