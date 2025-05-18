@@ -30,6 +30,7 @@ const AppContainer = styled.div<{ theme: Theme }>`
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 `
 
 const Header = styled.header`
@@ -42,6 +43,14 @@ const Header = styled.header`
   text-align: center;
   margin-bottom: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+  }
 `
 
 const LanguageButton = styled.button<{ theme: Theme }>`
@@ -59,9 +68,48 @@ const LanguageButton = styled.button<{ theme: Theme }>`
   gap: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background 0.2s, color 0.2s;
+  z-index: 100;
+
   &:hover {
     background: ${({ theme }) => theme.accent};
     color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+`
+
+const ThemeToggleButton = styled.button<{ theme: Theme }>`
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: ${({ theme }) => theme.sectionBg};
+  color: ${({ theme }) => theme.text};
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s, color 0.2s;
+  z-index: 100;
+
+  &:hover {
+    background: ${({ theme }) => theme.accent};
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    top: 10px;
+    left: 10px;
+    padding: 8px;
+    font-size: 0.9rem;
   }
 `
 
@@ -133,6 +181,20 @@ const HeroSection = styled(Section)<{ theme: Theme }>`
   text-align: center;
   padding: 0;
   box-shadow: none;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+
+    @media (max-width: 768px) {
+      transform: scale(0.9);
+    }
+  }
 `
 
 const ActivitiesList = styled.ul`
@@ -182,6 +244,10 @@ const MainContent = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 `
 
 const CommentsSection = styled(Section)`
@@ -342,11 +408,11 @@ function AppContent() {
           <FontAwesomeIcon icon={faLanguage} />
           {i18n.language === 'en' ? 'PT' : 'EN'}
         </LanguageButton>
-        <button style={{ position: 'absolute', top: 20, left: 20, zIndex: 10 }} onClick={handleThemeToggle}>
+        <ThemeToggleButton theme={theme} onClick={handleThemeToggle}>
           {isDark ? '🌙' : '☀️'}
-        </button>
+        </ThemeToggleButton>
         <HeroSection theme={theme}>
-          <img src={headerImg} alt="Daycare for Baby Reborn" style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: '0 auto' }} />
+          <img src={headerImg} alt="Daycare for Baby Reborn" />
         </HeroSection>
 
         {/* <GoogleAd /> */}
