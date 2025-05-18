@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Juliana M.",
-      "image": "/images/reviews/review1.jpg",
+      "image": "./images/reviews/review1.jpg",
       "rating": 4,
       "comment": "A creche tem um cuidado incrível, a equipe é super dedicada. Desde que comecei a deixar o Théo lá, consegui voltar a fazer terapia com foco — e, sinceramente, meus remédios voltaram a funcionar como no início do tratamento. Só não dou 5 estrelas porque ele voltou com a tiarinha trocada uma vez — e isso me abalou.",
       "date": "2025-04-20",
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "name": "Rafael D.",
-      "image": "/images/reviews/review2.jpg",
+      "image": "./images/reviews/review2.jpg",
       "rating": 2,
       "comment": "Fui por insistência da minha esposa, mas sinceramente não consegui levar a sério. A equipe é boa, mas eu ainda me sinto estranho com tudo isso. Talvez seja mais pra quem já está 100% entregue ao universo reborn. (Ainda assim, admito que minha ansiedade deu uma pausa... talvez os remédios tenham voltado a fazer efeito.)",
       "date": "2025-04-19",
@@ -21,7 +21,7 @@
     {
       "id": 3,
       "name": "Lorena C.",
-      "image": "/images/reviews/review3.jpg",
+      "image": "./images/reviews/review3.jpg",
       "rating": 5,
       "comment": "Simplesmente perfeita! A rotina da minha bebê é respeitada, ela volta cheirosa, com looks maravilhosos e eu consigo tomar meus remédios e até dormir um pouco. Depois de duas semanas levando a Luna, os efeitos colaterais desapareceram e o humor estabilizou. Coincidência? Acho que não. Não sei como vivi sem isso antes.",
       "date": "2025-03-18",
@@ -30,7 +30,7 @@
     {
       "id": 4,
       "name": "Patrícia Alves",
-      "image": "/images/reviews/review4.jpg",
+      "image": "./images/reviews/review4.jpg",
       "rating": 3,
       "comment": "A ideia é ótima e o lugar é fofo, mas sinto que meu bebê não está tão estimulado quanto eu gostaria. Mesmo assim, vale pelos momentos de paz mental que eu tenho. Os remédios que eu já tinha desistido de tomar começaram a fazer efeito de novo, então... mérito da creche.",
       "date": "2025-03-17",
@@ -39,7 +39,7 @@
     {
       "id": 5,
       "name": "Bianca R.",
-      "image": "/images/reviews/review5.jpg",
+      "image": "./images/reviews/review5.jpg",
       "rating": 5,
       "comment": "Gente, é tudo real mesmo. A creche é um sonho! Meus gêmeos reborn têm até melhor humor depois que começaram a frequentar. E eu? Voltei a lembrar que tenho uma vida. Agora tomo meus remédios no horário certinho e até lembro de beber água. Obrigada, Creche Reborn!",
       "date": "2025-03-16",

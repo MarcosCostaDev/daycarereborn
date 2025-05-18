@@ -13,7 +13,7 @@ export type Theme = {
 const lightTheme: Theme = {
   background: '#f5f5f5',
   text: '#333',
-  headerBg: '#80C3E5 url(../public/images/header-bg.png) repeat',
+  headerBg: '#80C3E5 url(images/header-bg.png) repeat',
   sectionBg: '#fff',
   accent: '#FFB6C1',
   cardBg: '#fff',
@@ -22,7 +22,7 @@ const lightTheme: Theme = {
 const darkTheme: Theme = {
   background: '#23272f',
   text: '#f5f5f5',
-  headerBg: '#2a3a4a url(../public/images/header-bg.png) repeat',
+  headerBg: '#2a3a4a url(images/header-bg.png) repeat',
   sectionBg: '#2a3a4a',
   accent: '#80C3E5',
   cardBg: '#313a45',
