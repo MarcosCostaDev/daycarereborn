@@ -198,7 +198,8 @@ function AppContent() {
     url: window.location.href,
     identifier: 'daycarereborn',
     title: 'Daycare Comments',
-    language: i18n.language
+    language: i18n.language,
+    theme: isDark ? 'dark' : 'light'
   }
 
   return (
