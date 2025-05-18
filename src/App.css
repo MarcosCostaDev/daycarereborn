@@ -1,8 +1,8 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  width: 100%;
 }
 
 .logo {
@@ -39,4 +39,57 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.app-container {
+  font-family: 'Comic Sans MS', 'Bubblegum Sans', cursive;
+  color: var(--text-color);
+  background: var(--background-color);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: var(--section-bg);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-section {
+  background: white;
+  text-align: center;
+}
+
+.pricing-section {
+  background: var(--baby-blue);
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.tagline-section {
+  background: var(--baby-pink);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
 }
