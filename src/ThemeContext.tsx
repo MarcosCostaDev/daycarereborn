@@ -39,14 +39,6 @@ export const useTheme = () => useContext(ThemeContext);
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [isDark, setIsDark] = useState(false);
 
-  useEffect(() => {
-    const match = window.matchMedia('(prefers-color-scheme: dark)');
-    setIsDark(match.matches);
-    const handler = (e: MediaQueryListEvent) => setIsDark(e.matches);
-    match.addEventListener('change', handler);
-    return () => match.removeEventListener('change', handler);
-  }, []);
-
   const toggleTheme = () => setIsDark((d) => !d);
 
   const theme = isDark ? darkTheme : lightTheme;

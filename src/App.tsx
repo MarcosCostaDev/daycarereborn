@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,6 +12,15 @@ import headerBgImg from '/images/header-bg.png'
 import { ThemeProvider, useTheme } from './ThemeContext'
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react'
 import type { Theme } from './ThemeContext'
+
+// Add DISQUS type declaration
+declare global {
+  interface Window {
+    DISQUS?: {
+      reset: (options: { reload: boolean; config: any }) => void;
+    };
+  }
+}
 
 const AppContainer = styled.div<{ theme: Theme }>`
   font-family: 'Comic Sans MS', 'Bubblegum Sans', cursive;
@@ -178,11 +187,122 @@ const MainContent = styled.div`
 const CommentsSection = styled(Section)`
   margin-top: 3rem;
   text-align: center;
+  padding: 2rem;
+  background: ${({ theme }) => theme.sectionBg};
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Disqus container styling */
+  .disqus-container {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: ${({ theme }) => theme.cardBg};
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Override Disqus default styles */
+  iframe {
+    border-radius: 10px !important;
+    background: ${({ theme }) => theme.cardBg} !important;
+  }
+
+  /* Dark theme specific overrides */
+  .dark-theme & {
+    .disqus-container {
+      background: #1a1a1a;
+    }
+
+    iframe {
+      background: #1a1a1a !important;
+    }
+
+    /* Override Disqus dark theme elements */
+    :global {
+      #disqus_thread {
+        background: #1a1a1a !important;
+      }
+
+      .dark-theme {
+        background: #1a1a1a !important;
+        color: #f5f5f5 !important;
+      }
+
+      .dark-theme .post-message {
+        color: #f5f5f5 !important;
+      }
+
+      .dark-theme .post-body {
+        color: #f5f5f5 !important;
+      }
+
+      .dark-theme .textarea-wrapper textarea {
+        background: #2a2a2a !important;
+        color: #f5f5f5 !important;
+        border-color: #3a3a3a !important;
+      }
+
+      .dark-theme .textarea-wrapper textarea:focus {
+        border-color: #4a4a4a !important;
+      }
+
+      .dark-theme .textarea-wrapper .textarea {
+        background: #2a2a2a !important;
+        color: #f5f5f5 !important;
+      }
+
+      .dark-theme .textarea-wrapper .textarea:focus {
+        border-color: #4a4a4a !important;
+      }
+
+      .dark-theme .textarea-wrapper .textarea:placeholder {
+        color: #888 !important;
+      }
+
+      .dark-theme .textarea-wrapper .textarea:focus::placeholder {
+        color: #aaa !important;
+      }
+
+      .dark-theme .textarea-wrapper .textarea:focus {
+        background: #2a2a2a !important;
+      }
+
+      .dark-theme .textarea-wrapper .textarea:focus::placeholder {
+        color: #aaa !important;
+      }
+
+      .dark-theme .textarea-wrapper .textarea:focus::-webkit-input-placeholder {
+        color: #aaa !important;
+      }
+
+      .dark-theme .textarea-wrapper .textarea:focus::-moz-placeholder {
+        color: #aaa !important;
+      }
+
+      .dark-theme .textarea-wrapper .textarea:focus:-ms-input-placeholder {
+        color: #aaa !important;
+      }
+
+      .dark-theme .textarea-wrapper .textarea:focus:-moz-placeholder {
+        color: #aaa !important;
+      }
+    }
+  }
+
+  /* Style the description text */
+  p {
+    color: ${({ theme }) => theme.text};
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
 `
 
 const CommentsTitle = styled.h2<{ theme: Theme }>`
   color: ${({ theme }) => theme.text};
   margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
 `
 
 function AppContent() {
@@ -198,9 +318,19 @@ function AppContent() {
     url: window.location.href,
     identifier: 'daycarereborn',
     title: 'Daycare Comments',
-    language: i18n.language,
+    language: i18n.language === 'en' ? 'en' : 'pt_BR',
     theme: isDark ? 'dark' : 'light'
   }
+
+  // Update Disqus language when i18n language changes
+  useEffect(() => {
+    if (window.DISQUS) {
+      window.DISQUS.reset({
+        reload: true,
+        config: disqusConfig
+      });
+    }
+  }, [i18n.language]);
 
   return (
     <AppContainer theme={theme}>
@@ -274,10 +404,12 @@ function AppContent() {
         <CommentsSection theme={theme}>
           <CommentsTitle theme={theme}>{t('comments.title', 'Share Your Experience')}</CommentsTitle>
           <p>{t('comments.description', 'We would love to hear about your experience with our daycare. Please share your thoughts and comments below.')}</p>
-          <DiscussionEmbed
-            shortname="daycarereborn"
-            config={disqusConfig}
-          />
+          <div className="disqus-container">
+            <DiscussionEmbed
+              shortname="daycarereborn"
+              config={disqusConfig}
+            />
+          </div>
         </CommentsSection>
       </MainContent>
     </AppContainer>
