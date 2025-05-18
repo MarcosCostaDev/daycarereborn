@@ -96,5 +96,40 @@
   "discussion": {
     "title": "Participe da Discussão",
     "description": "Compartilhe seus pensamentos e experiências com nossa comunidade"
+  },
+  "careers": {
+    "title": "Trabalhe Conosco!",
+    "subtitle": "Junte-se à nossa equipe mágica de cuidadores de bonecas!",
+    "description": "Estamos sempre procurando pessoas apaixonadas que acreditam no poder da brincadeira e da imaginação. Não é necessário experiência com crianças reais!",
+    "positions": {
+      "doll_whisperer": {
+        "title": "Sussurradora de Bonecas",
+        "description": "Você consegue entender o que uma boneca está pensando apenas olhando para seus olhos de plástico? Precisamos de alguém que possa interpretar emoções de bonecas e mediar conflitos entre elas. Deve ser fluente em Bonequês."
+      },
+      "hair_stylist": {
+        "title": "Estilista de Cabelos de Bonecas",
+        "description": "Especialista em desembaraçar desastres capilares sintéticos. Deve ser capaz de criar 100 penteados diferentes usando apenas um pente e pensamentos positivos. Experiência com cabelos reais opcional."
+      },
+      "fashion_consultant": {
+        "title": "Consultora de Moda para Bonecas",
+        "description": "Ajude nossas bonecas a ficarem na moda! Deve saber a diferença entre uma tutu e um tule, e ser capaz de acessorizar com sapatos minúsculos. Experiência anterior vestindo pessoas reais não é necessária."
+      },
+      "doll_therapist": {
+        "title": "Terapeuta de Bonecas",
+        "description": "Especializado em resolver crises de identidade de bonecas. Deve ser capaz de ajudar bonecas a aceitarem serem produzidas em massa. Experiência com filosofia existencial é um plus."
+      },
+      "toy_archaeologist": {
+        "title": "Arqueólogo de Brinquedos",
+        "description": "Escave e restaure bonecas vintage das profundezas das caixas de brinquedos. Deve ser capaz de datar uma boneca pelo seu penteado e identificar moda autêntica dos anos 80."
+      },
+      "doll_exorcist": {
+        "title": "Exorcista de Bonecas",
+        "description": "Especializado em remover espíritos indesejados de bonecas reborn assombradas. Deve ser capaz de realizar exorcismos usando apenas talco e canções de ninar. Experiência com exorcismos reais não é necessária, mas um bom senso de humor é obrigatório!"
+      },
+      "entity_summoner": {
+        "title": "Invocador de Entidades",
+        "description": "Procuramos alguém que possa invocar espíritos amigáveis para habitar nossas bonecas reborn. Deve ser capaz de distinguir entre poltergeists brincalhões e possessões problemáticas. Experiência com tabuleiros Ouija opcional, mas deve trazer sua própria coleção de bonecas assustadoras."
+      }
+    }
   }
 } 

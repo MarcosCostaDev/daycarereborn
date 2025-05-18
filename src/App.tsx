@@ -8,6 +8,7 @@ import { LanguageProvider, useLanguage } from './contexts/LanguageContext'
 import { Header } from './components/Header/Header'
 import { Reviews } from './components/Reviews/Reviews'
 import { Activities } from './components/Activities/Activities'
+import { Careers } from './components/Careers/Careers'
 import { activities } from './constants/activities'
 
 function AppContent() {
@@ -60,6 +61,8 @@ function AppContent() {
             }}
           />
         </section>
+
+        <Careers />
       </div>
     </div>
   )

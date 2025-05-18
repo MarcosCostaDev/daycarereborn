@@ -96,5 +96,40 @@
   "discussion": {
     "title": "Join the Discussion",
     "description": "Share your thoughts and experiences with our community"
+  },
+  "careers": {
+    "title": "Work with Us!",
+    "subtitle": "Join our magical team of doll caretakers!",
+    "description": "We're always looking for passionate individuals who believe in the power of play and imagination. No experience with real children required!",
+    "positions": {
+      "doll_whisperer": {
+        "title": "Doll Whisperer",
+        "description": "Can you understand what a doll is thinking just by looking at its plastic eyes? We need someone who can interpret doll emotions and mediate doll conflicts. Must be fluent in Dollish."
+      },
+      "hair_stylist": {
+        "title": "Doll Hair Stylist",
+        "description": "Expert in untangling synthetic hair disasters. Must be able to create 100 different hairstyles using only a comb and positive thoughts. Experience with real hair optional."
+      },
+      "fashion_consultant": {
+        "title": "Doll Fashion Consultant",
+        "description": "Help our dolls stay on trend! Must know the difference between a tutu and a tulle, and be able to accessorize with tiny shoes. Previous experience dressing real people not required."
+      },
+      "doll_therapist": {
+        "title": "Doll Therapist",
+        "description": "Specialized in resolving doll identity crises. Must be able to help dolls come to terms with being mass-produced. Experience with existential philosophy a plus."
+      },
+      "toy_archaeologist": {
+        "title": "Toy Archaeologist",
+        "description": "Excavate and restore vintage dolls from the depths of toy boxes. Must be able to date a doll by its hairstyle and identify authentic 80s fashion."
+      },
+      "doll_exorcist": {
+        "title": "Doll Exorcist",
+        "description": "Specialized in removing unwanted spirits from haunted reborn dolls. Must be able to perform exorcisms using only baby powder and lullabies. Experience with real exorcisms not required, but a good sense of humor is a must!"
+      },
+      "entity_summoner": {
+        "title": "Entity Summoner",
+        "description": "Looking for someone who can summon friendly spirits to inhabit our reborn dolls. Must be able to distinguish between playful poltergeists and problematic possessions. Experience with Ouija boards optional, but must bring their own collection of creepy dolls."
+      }
+    }
   }
 } 
