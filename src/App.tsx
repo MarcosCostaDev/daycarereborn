@@ -274,7 +274,7 @@ function AppContent() {
           <CommentsTitle theme={theme}>{t('comments.title', 'Share Your Experience')}</CommentsTitle>
           <p>{t('comments.description', 'We would love to hear about your experience with our daycare. Please share your thoughts and comments below.')}</p>
           <DiscussionEmbed
-            shortname="your-disqus-shortname"
+            shortname="daycarereborn"
             config={disqusConfig}
           />
         </CommentsSection>
