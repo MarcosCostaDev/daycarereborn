@@ -13,10 +13,10 @@ import { ThemeProvider, useTheme } from './ThemeContext'
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react'
 import type { Theme } from './ThemeContext'
 
-const AppContainer = styled.div<{ theme?: Theme }>`
+const AppContainer = styled.div<{ theme: Theme }>`
   font-family: 'Comic Sans MS', 'Bubblegum Sans', cursive;
-  color: ${({ theme }) => theme?.text};
-  background: ${({ theme }) => theme?.background};
+  color: ${({ theme }) => theme.text};
+  background: ${({ theme }) => theme.background};
   width: 100vw;
   min-height: 100vh;
   margin: 0;
@@ -35,12 +35,12 @@ const Header = styled.header`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `
 
-const LanguageButton = styled.button<{ theme?: Theme }>`
+const LanguageButton = styled.button<{ theme: Theme }>`
   position: absolute;
   top: 20px;
   right: 20px;
-  background: ${({ theme }) => theme?.sectionBg};
-  color: ${({ theme }) => theme?.text};
+  background: ${({ theme }) => theme.sectionBg};
+  color: ${({ theme }) => theme.text};
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
@@ -51,15 +51,15 @@ const LanguageButton = styled.button<{ theme?: Theme }>`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background 0.2s, color 0.2s;
   &:hover {
-    background: ${({ theme }) => theme?.accent};
+    background: ${({ theme }) => theme.accent};
     color: #fff;
   }
 `
 
-const Section = styled.section<{ theme?: Theme }>`
+const Section = styled.section<{ theme: Theme }>`
   margin: 2rem 0;
   padding: 2rem;
-  background: ${({ theme }) => theme?.sectionBg};
+  background: ${({ theme }) => theme.sectionBg};
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `
@@ -119,8 +119,8 @@ const ReviewName = styled.h3`
   margin: 0.5rem 0;
 `
 
-const HeroSection = styled(Section)<{ theme?: Theme }>`
-  background: ${({ theme }) => theme?.headerBg};
+const HeroSection = styled(Section)<{ theme: Theme }>`
+  background: ${({ theme }) => theme.headerBg};
   text-align: center;
   padding: 0;
   box-shadow: none;
@@ -180,8 +180,8 @@ const CommentsSection = styled(Section)`
   text-align: center;
 `
 
-const CommentsTitle = styled.h2`
-  color: ${({ theme }) => theme?.text};
+const CommentsTitle = styled.h2<{ theme: Theme }>`
+  color: ${({ theme }) => theme.text};
   margin-bottom: 2rem;
 `
 
@@ -220,7 +220,7 @@ function AppContent() {
 
         {/* <GoogleAd /> */}
 
-        <Section>
+        <Section theme={theme}>
           <h2>{t('dailyActivities.title')}</h2>
           <ActivitiesList>
             {activities.map((activity: string, index: number) => (
@@ -232,22 +232,22 @@ function AppContent() {
           </ActivitiesList>
         </Section>
 
-        <BenefitsSection>
+        <BenefitsSection theme={theme}>
           <h2>{t('benefits.title')}</h2>
           <h3>{t('benefits.subtitle')}</h3>
           <p>{t('benefits.description')}</p>
         </BenefitsSection>
 
-        <PricingSection>
+        <PricingSection theme={theme}>
           <p>{t('pricing.text')}</p>
         </PricingSection>
 
-        <TaglineSection>
+        <TaglineSection theme={theme}>
           <p>{t('tagline.line1')}</p>
           <p>{t('tagline.line2')}</p>
         </TaglineSection>
 
-        <Section>
+        <Section theme={theme}>
           <h2>{t('reviewSection.title')}</h2>
           <ReviewsGrid>
             {reviews.map((review) => (
@@ -271,7 +271,7 @@ function AppContent() {
         </Section>
 
         <CommentsSection theme={theme}>
-          <CommentsTitle>{t('comments.title', 'Share Your Experience')}</CommentsTitle>
+          <CommentsTitle theme={theme}>{t('comments.title', 'Share Your Experience')}</CommentsTitle>
           <p>{t('comments.description', 'We would love to hear about your experience with our daycare. Please share your thoughts and comments below.')}</p>
           <DiscussionEmbed
             shortname="your-disqus-shortname"

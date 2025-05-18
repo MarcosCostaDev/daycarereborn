@@ -31,16 +31,6 @@ jobs:
           NODE_ENV: production
           VITE_IGNORE_TS_ERRORS: true
 
-      - name: Create gh-pages branch if not exists
-        run: |
-          if ! git ls-remote --heads origin gh-pages; then
-            git checkout --orphan gh-pages
-            git reset --hard
-            git commit --allow-empty -m "Initial gh-pages commit"
-            git push origin gh-pages
-            git checkout main
-          fi
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
